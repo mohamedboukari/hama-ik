@@ -10,9 +10,7 @@ function App() {
   const [error, setError] = useState(null);
 
   // Use environment variable with fallback
-  const API_KEY =
-    import.meta.env.VITE_OPENWEATHER_API_KEY ||
-    "ef7c08d7b8e2dda11bad4e33a36e5919";
+  const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
   const fetchWeather = async (searchCity) => {
     if (!searchCity) return;
