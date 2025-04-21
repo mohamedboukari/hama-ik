@@ -23,6 +23,7 @@ A modern weather application that provides real-time weather information for any
 
 - Node.js (v14 or higher)
 - npm or yarn
+- OpenWeatherMap API key (sign up for free at [OpenWeatherMap](https://openweathermap.org/api))
 
 ### Installation
 
@@ -39,14 +40,21 @@ A modern weather application that provides real-time weather information for any
    yarn
    ```
 
-3. Start the development server
+3. Set up environment variables
+   - Create a `.env` file in the root directory
+   - Add your OpenWeatherMap API key:
+   ```
+   VITE_OPENWEATHER_API_KEY=your_api_key_here
+   ```
+
+4. Start the development server
    ```
    npm run dev
    # or
    yarn dev
    ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+5. Open your browser and navigate to `http://localhost:5173`
 
 ## Building for Production
 
@@ -61,6 +69,15 @@ The build files will be output to the `dist` directory.
 ## API Information
 
 This project uses the [OpenWeatherMap API](https://openweathermap.org/api) for weather data. The free tier allows up to 1,000 API calls per day.
+
+### Troubleshooting API Issues
+
+If you're seeing errors with the weather search:
+
+1. Verify your API key is correctly set in the `.env` file
+2. Check that the city name is spelled correctly
+3. Make sure you have not exceeded the API call limit (1,000 calls/day for free accounts)
+4. Check the browser console for specific error messages
 
 ## License
 
