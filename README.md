@@ -79,6 +79,11 @@ If you're seeing errors with the weather search:
 3. Make sure you have not exceeded the API call limit (1,000 calls/day for free accounts)
 4. Check the browser console for specific error messages
 
+## Documentation
+
+- [API Details](docs/API_DETAILS.md) - Information about the OpenWeatherMap API
+- [Component Documentation](docs/COMPONENTS.md) - Details about the React components
+
 ## License
 
 MIT License
